@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  </head> 
+  <body background="bgimage.jpg" class="bg">
+    <div align="center">
+      <div class="white-bg" align="center">
+          <img style="padding:15px 0px 0px 0px;" src="fantasticbig.jpg" width="400">
+          <form id="gform" method="POST" class="pure-form pure-form-stacked" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbyn6LlD5NsKslzzgzRzDbFAH6W1NY8-EilH9dNP2cMqipWdRDY/exec">
+            <h1>Return Form</h1>
+            <br>
+            <fieldset class="pure-group">
+              <label for="coName"><strong>Company Name</strong></label>
+              <input id="coName" name="Company Name" placeholder="Fantastic Fawn" />
+            </fieldset>
+            <fieldset class="pure-group">
+              <label for="email"><strong><em>Your</em> Email Address</strong></label>
+              <input id="email" name="email" type="email" required placeholder="customer@fantasticfawn.com"/>
+              <span id="email-invalid" style="display:none">Must be a valid email address</span>
+            </fieldset>
+            <fieldset class="pure-group">
+              <label for="inNumber"><strong>Invoice Number</strong></label>
+              <input id="inNumber" type="number" name="Invoice Number" placeholder="500123" min="500000"/>
+            </fieldset>
+            <fieldset class="pure-group">
+              <label for="rtReason"><strong>Return Reason</strong></label>
+              <select id="rtReason" name="Return Reason">
+                <option>Return for Store Credit</option>
+                <option>Exchange for Different Style</option>
+                <option>Received Wrong Style</option>
+                <option>Item Never Received</option>
+                <option>Damaged Item</option>
+              </select>
+            </fieldset>
+            <fieldset class="pure-group">
+              <label for="reasonArea"></label>
+              <textarea id="reasonArea" name="Reason Explanation" rows="10" placeholder="What styles are you returning?"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit" class="btn" id="submitButton"><i class="fa fa-paper-plane"></i>&nbsp;Submit</button>
+          </form>
+    <div style="display:none;" id="thankyou_message">
+      <h2 class="thankyou">Thanks for contacting us!
+        <br>We will get back to you soon!
+      </h2>
+    </div>
+  </div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
