@@ -70,6 +70,7 @@ function handleFormSubmit(event) {
     var url = event.target.action;
     var xhr = new XMLHttpRequest();
     var cName = $('#coName').val();
+    var cuName = $('#custName').val();
     var iNumber = $('#inNumber').val();
     var eMail = $('#email').val();
     var rReason = $('#rtReason').find(':selected').text();
@@ -77,6 +78,7 @@ function handleFormSubmit(event) {
 
     firebase.database().ref('returns').push({
       company: cName,
+      name: cuName,
       invoice: iNumber,
       email: eMail,
       return: rReason,

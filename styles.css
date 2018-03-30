@@ -29,7 +29,7 @@
   padding-left: 10px;
 }
 
-#coName, #email, #inNumber, #rtReason, #reasonArea {
+#coName, #email, #inNumber, #rtReason, #reasonArea, #custName{
   width: 65%;
 }
 
