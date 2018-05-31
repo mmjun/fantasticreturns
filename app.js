@@ -52,7 +52,7 @@ function getFormData() {
   });
 
   data.formDataNameOrder = JSON.stringify(fields);
-  data.formGoogleSheetName = form.dataset.sheet || "responses";
+  data.formGoogleSheetName = form.dataset.sheet || "FF";
   data.formGoogleSendEmail = form.dataset.email || "";
 
   console.log(data);
