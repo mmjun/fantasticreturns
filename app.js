@@ -103,6 +103,6 @@ function handleFormSubmit(event) {
 function loaded() {
   console.log('return form ready to go');
   var form = document.getElementById('gform');
-  form.addEventListener("submit", handleFormSubmit, false);
+  form.addEventListener("submit", handleFormSubmit, false, {once: true});
 };
 document.addEventListener('DOMContentLoaded', loaded, false);
